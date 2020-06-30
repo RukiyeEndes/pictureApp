@@ -1,0 +1,86 @@
+@import "mixins.scss";
+@import "variables.scss";
+@import "reset.scss";
+
+header {
+    background-color: $bg;
+}
+
+.nav-bar {
+    background-color: $black;
+    ul {
+        width: 100%;
+        @include clearFloat;
+        li {
+            float: left;
+            font-weight: bold;
+            a {
+                display: block;
+                padding: 15px;
+                color: $white;
+                &:hover {
+                    color: $darkGrey;
+                }
+            }
+        }
+    }
+}
+
+.top-banner {
+    @include banner;
+    background-color: $orange;   
+    @include clearFloat;
+    li:first-child {
+        text-transform: uppercase;
+        display: initial;
+    }
+    li:last-child{
+        float: right;
+    }
+    li:last-child img {
+        width: 50%;
+        float: right;
+    }
+}
+
+section {
+    background-color: $specialBlue;
+    margin-bottom: 50px;
+    @include clearFloat;
+    #btn {
+        margin: 10px 0;
+        text-align: center;
+    }
+    h3 {
+        color: $white;
+        text-align: center;
+    }
+    li {
+        list-style: none;
+        float: left;
+        height: 200px;
+        background-color: $white;
+        @include grid(5,3%);
+        @include mediaQuery(0,600px){
+            @include grid(2,3%);
+        }
+    }
+}
+
+footer {
+    color: $footerColor;
+    background-color: $bg;
+    h3 {
+        color: $white;
+    }
+}
+.list-inline {
+    float: left;   
+    li a {
+        color: $white;
+    }
+}
+
+.list-unstyled li:first-child {
+    color: $white;
+}
