@@ -13,13 +13,13 @@ gulp.task('sass',()=>{
     .pipe(gulp.dest('./src/css/'))
 })
 
-// css dosyalarını sıkıstırıp diste kaydet
+// css dosyalarını diste kaydet
 gulp.task('css',()=>{
     return gulp.src('./src/css/**/*.css')
     .pipe(gulp.dest('./dist/css/'))
 })
 
-// js dosyalarını sıkıstırıp diste kaydet
+// js dosyalarını diste kaydet
 gulp.task('js',()=>{
     return gulp.src('./src/js/**/*.js')
     .pipe(gulp.dest('./dist/js/'))
