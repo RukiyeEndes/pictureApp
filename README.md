@@ -14,5 +14,5 @@ Bootstrap
 
 ### Dikkat Edilmesi Gereken Noktalar
 
-"Resimleri Getir" butonuna bir kez tıklanılmalıdır. Resimler birkaç saniye geç yüklenebilir. <br/>
+"Resimleri Getir" butonuna bir kez tıklanmaktadır. Resimler birkaç saniye geç yüklenebilir. <br/>
 "font awesome cdn" kullanılmıştır
